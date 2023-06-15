@@ -25,9 +25,11 @@ Print the predicted output.
 
 ## Program:
 ```
+REG.NO:212222230132
+NAME: SANJAY S
 import pandas as pd
 from sklearn import linear_model
-df=pd.read_csv("/content/cars (1).csv")
+df=pd.read_csv('/content/cars (1)(1).csv')
 x=df[['Weight','Volume']]
 y=df['CO2']
 regr=linear_model.LinearRegression()
@@ -35,7 +37,7 @@ regr.fit(x,y)
 print("Coefficient:",regr.coef_)
 print("Intercept:",regr.intercept_)
 predictedCO2=regr.predict([[3300,1300]])
-print("Predicted CO@ for the corresponding weight and volume",predictedCO2)
+print("final output:",predictedCO2)
 
 
 
@@ -54,10 +56,10 @@ Coefficient: [0.00755095 0.00780526]
 Intercept: 79.69471929115939
 
 
-Predicted CO@ for the corresponding weight and volume [114.75968007]
+Predicted CO2 for the corresponding weight and volume [114.75968007]
 
 
-![image](https://github.com/22002102/Multivariate-Linear-Regression/assets/119091638/e97a5808-1981-4d52-8cb6-01efb966c8b0)
+![image](https://github.com/22002102/Multivariate-Linear-Regression/assets/119091638/64b85712-7af3-4766-a72f-8d991021a661)
 
 
 ## Result
